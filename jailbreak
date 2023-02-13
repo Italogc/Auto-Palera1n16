@@ -10,7 +10,7 @@ echo "Digite 1 para iniciar ou 0 para sair"
 read resp
 if [ $resp -eq 1 ]
  then
-   echo -e "\033[0;37m[*] Instalando Dependencias... pode demorar em torno de 1 hora, aguarde com paci"
+   echo -e "\033[0;37m[*] Instalando Dependencias... pode demorar em torno de 1 hora, aguarde com paciencia!"
    sudo apt-get -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update > /dev/null
    sudo apt update > /dev/null
    sudo apt install git -y > /dev/null
