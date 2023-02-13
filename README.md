@@ -16,7 +16,7 @@ ITALOGC IOS
 
 <pre>sudo apt install git -y</pre>
 
-<pre>sudo git clone https://github.com/Italogc/Auto-Palera1n16</pre>
+<pre>sudo git clone --recursive https://github.com/Italogc/Auto-Palera1n16</pre>
 
 <pre>cd Auto-Palera1n16</pre>
 
