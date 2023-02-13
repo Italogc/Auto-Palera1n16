@@ -44,7 +44,6 @@ if [ $resp -eq 1 ]
    sudo apt-get install libtool-bin > /dev/null
    sudo apt-get install libplist-dev > /dev/null
    sudo apt-get install libusbmuxd-dev > /dev/null
-   sudo apt-get install libimobiledevice-glue-dev > /dev/null
    sudo apt-get install libssl-dev > /dev/null
    sudo apt-get install usbmuxd > /dev/null
    sudo apt-get install doxygen > /dev/null
