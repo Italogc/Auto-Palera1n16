@@ -49,7 +49,7 @@ if [ $resp -eq 1 ]
    sudo apt-get install usbmuxd > /dev/null
    sudo apt-get install doxygen > /dev/null
    sudo apt-get install cython > /dev/null
-   printf "\n[+] A instalar dependências do LibiMobileDevice...\n"
+   printf "\n[*] A instalar dependências do LibiMobileDevice...\n"
    sudo git clone https://github.com/libimobiledevice/libimobiledevice.git &> /dev/null
    cd libimobiledevice
    sudo ./autogen.sh &> /dev/null
@@ -75,14 +75,14 @@ if [ $resp -eq 1 ]
    sudo ./autogen.sh --with-gnutls &> /dev/null
    sudo ./autogen.sh --with-mbedtls mbedtls_INCLUDES=/opt/local/include mbedtls_LIBDIR=/opt/local/lib &> /dev/null
    cd ..
-   printf "\n[+] A instalar dependências avançadas do usbmuxd2...\n"
+   printf "\n[*] A instalar dependências avançadas do usbmuxd2...\n"
    sudo git clone --recursive https://github.com/Italogc/usbmuxd2 &> /dev/null
    sudo apt-get update > /dev/null
    sudo apt-get upgrade > /dev/null
    sudo add-apt-repository universe > /dev/null
    sudo apt-get update > /dev/null
    sudo apt install libmobiledevice-utils libusbmuxd git curl python3-pip -y > /dev/null
-   printf "\n[+] Dependencias instaladas!\n"
+   printf "\n[*] Dependencias instaladas!\n"
    sleep 1
    systemctl stop usbmuxd
    cd ..
@@ -91,8 +91,6 @@ if [ $resp -eq 1 ]
    echo "[+] Palera1n Baixado!"
    sudo git clone --recursive https://github.com/Italogc/palera1n-3.0 &> /dev/null
    echo "[+] Palera1n Boot Fix 3.0 de Italogc-iOS Baixado!"
-   echo "[+] Caso no final do Palera1n seu aparelho crashe em Modo Recuperação, execute o palerain-3.0 do iTalogc iOS para dar fix neste problema." 
-   echo "[+] Para executar o Fix 3.0 é necessário terminar este jailbreak por completo antes:"
    echo "[+]                "
    echo "[+] Prosseguindo para o Palera1n Jailbreak..."
    echo "[+]                "
