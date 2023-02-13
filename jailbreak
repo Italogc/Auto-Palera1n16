@@ -58,17 +58,6 @@ if [ $resp -eq 1 ]
    sudo ./autogen.sh --prefix=/opt/local --enable-debug &> /dev/null
    sudo make &> /dev/null
    sudo make install &> /dev/null
-   cd ..
-   sudo git clone https://github.com/libimobiledevice/libimobiledevice-glue.git &> /dev/null
-   cd libimobiledevice-glue
-   sudo ./autogen.sh &> /dev/null
-   sudo make &> /dev/null
-   sudo make install &> /dev/null
-   sudo ./autogen.sh --prefix=/opt/local &> /dev/null
-   sudo make &> /dev/null
-   sudo make install &> /dev/null
-   cd ..
-   cd libimobiledevice
    sudo ./autogen.sh --prefix=/opt/local --enable-debug &> /dev/null
    sudo make &> /dev/null
    sudo make install &> /dev/null
