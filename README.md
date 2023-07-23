@@ -22,6 +22,12 @@ ITALOGC IOS
 
 <pre>sudo apt-get install build-essential -y > /dev/null</pre>
 
+<pre>brew install gcc</pre>
+
+<pre>brew install libusbmuxd</pre>
+
+<pre>brew install libimobiledevice</pre>
+
 <pre>sudo git clone --recursive https://github.com/Italogc/Auto-Palera1n16 && cd Auto-Palera1n16</pre>
 
 <pre>sudo chmod +x *</pre>
