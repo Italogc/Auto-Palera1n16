@@ -68,13 +68,6 @@ if [ $resp -eq 1 ]
    sudo apt-get update > /dev/null
    sudo add-apt-repository universe > /dev/null
    sudo apt-get update > /dev/null
-   printf "\n[*] A instalar dependências do Jailbreak pelo brew...\n"
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &> /dev/null
-   sudo apt-get install build-essential -y > /dev/null
-   brew install gcc
-   brew install libusbmuxd
-   brew install libimobiledevice
    sudo apt install git curl python3-pip -y > /dev/null
    printf "\n[*] Dependencias instaladas!\n"
    sleep 1
