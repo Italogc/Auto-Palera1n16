@@ -16,9 +16,13 @@ ITALOGC IOS
 
 <pre>sudo apt install git -y</pre>
 
-<pre>sudo git clone --recursive https://github.com/Italogc/Auto-Palera1n16</pre>
+<pre>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
 
-<pre>cd Auto-Palera1n16</pre>
+<pre>eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &> /dev/null</pre>
+
+<pre>sudo apt-get install build-essential -y > /dev/null</pre>
+
+<pre>sudo git clone --recursive https://github.com/Italogc/Auto-Palera1n16 && cd Auto-Palera1n16</pre>
 
 <pre>sudo chmod +x *</pre>
 
