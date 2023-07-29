@@ -11,72 +11,72 @@ read resp
 if [ $resp -eq 1 ]
  then
    echo -e "\033[0;37m[*] Instalando Dependencias... pode demorar em torno de 1 hora, aguarde com paciencia!"
-   sudo apt-get -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update > /dev/null
-   sudo apt update > /dev/null
-   sudo apt install git -y > /dev/null
-   sudo apt-get install sudo gcc bash wget python3-pip libavahi-client-dev libusb-1.0-0 libusb-1.0-0-dev libadolc2 libusbmuxd-tools libtool usbmuxd libtool-bin autoconf automake libimobiledevice* make -y > /dev/null
-   sudo pip install pyimg4 &> /dev/null
-   wget https://github.com/Italogc/Auto-Palera1n16/raw/main/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb &> /dev/null
-   wget https://github.com/CoocooFroggy/FutureRestore-GUI/releases/download/v1.98.2/FutureRestore-GUI-Debian-1.98.2.deb &> /dev/null
-   sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb > /dev/null
-   sudo dpkg -i FutureRestore-GUI-Debian-1.98.2.deb > /dev/null
-   sudo git clone https://github.com/tihmstar/libgeneral &> /dev/null
+   sudo apt-get -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update
+   sudo apt update
+   sudo apt install git -y
+   sudo apt-get install sudo gcc bash wget python3-pip libavahi-client-dev libusb-1.0-0 libusb-1.0-0-dev libadolc2 libusbmuxd-tools libtool usbmuxd libtool-bin autoconf automake libimobiledevice* make -y
+   sudo pip install pyimg4
+   wget https://github.com/Italogc/Auto-Palera1n16/raw/main/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+   wget https://github.com/CoocooFroggy/FutureRestore-GUI/releases/download/v1.98.2/FutureRestore-GUI-Debian-1.98.2.deb
+   sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+   sudo dpkg -i FutureRestore-GUI-Debian-1.98.2.deb
+   sudo git clone https://github.com/tihmstar/libgeneral
    cd libgeneral
    printf "\n[*] Compilando LIBGENERAL...\n\n"
-   sudo ./autogen.sh &> /dev/null
-   sudo make &> /dev/null
-   sudo make install &> /dev/null
+   sudo ./autogen.sh
+   sudo make
+   sudo make install
    cd ..
-   sudo git clone https://github.com/tihmstar/usbmuxd2 &> /dev/null
+   sudo git clone https://github.com/tihmstar/usbmuxd2
    cd usbmuxd2
    printf "\n[*] Compilando USBMUXD2...\n\n"
-   sudo ./autogen.sh &> /dev/null
-   make &> /dev/null
-   make install &> /dev/null
+   sudo ./autogen.sh
+   sudo make
+   sudo make install
    cd ..
-   sudo apt-get update > /dev/null
-   sudo apt-get install build-essential > /dev/null
-   sudo apt-get install pkg-config > /dev/null
-   sudo apt-get install checkinstall > /dev/null
-   sudo apt-get install git > /dev/null
-   sudo apt-get install autoconf > /dev/null 
-   sudo apt-get install automake > /dev/null
-   sudo apt-get install libtool-bin > /dev/null
-   sudo apt-get install libplist-dev > /dev/null
-   sudo apt-get install libusbmuxd-dev > /dev/null
-   sudo apt-get install libssl-dev > /dev/null
-   sudo apt-get install usbmuxd > /dev/null
-   sudo apt-get install doxygen > /dev/null
-   sudo apt-get install cython > /dev/null
+   sudo apt-get update
+   sudo apt-get install build-essential
+   sudo apt-get install pkg-config
+   sudo apt-get install checkinstall
+   sudo apt-get install git
+   sudo apt-get install autoconf 
+   sudo apt-get install automake
+   sudo apt-get install libtool-bin
+   sudo apt-get install libplist-dev
+   sudo apt-get install libusbmuxd-dev
+   sudo apt-get install libssl-dev
+   sudo apt-get install usbmuxd
+   sudo apt-get install doxygen
+   sudo apt-get install cython
    printf "\n[*] A instalar dependências do LibiMobileDevice...\n"
-   sudo git clone https://github.com/libimobiledevice/libimobiledevice.git &> /dev/null
+   sudo git clone https://github.com/libimobiledevice/libimobiledevice.git
    cd libimobiledevice
-   sudo ./autogen.sh &> /dev/null
-   sudo make &> /dev/null
-   sudo make install &> /dev/null
-   sudo ./autogen.sh --prefix=/opt/local --enable-debug &> /dev/null
-   sudo make &> /dev/null
-   sudo make install &> /dev/null
-   sudo ./autogen.sh --prefix=/opt/local --enable-debug &> /dev/null
-   sudo make &> /dev/null
-   sudo make install &> /dev/null
-   sudo ./autogen.sh --with-gnutls &> /dev/null
-   sudo ./autogen.sh --with-mbedtls mbedtls_INCLUDES=/opt/local/include mbedtls_LIBDIR=/opt/local/lib &> /dev/null
+   sudo ./autogen.sh
+   sudo make
+   sudo make install
+   sudo ./autogen.sh --prefix=/opt/local --enable-debug
+   sudo make
+   sudo make install
+   sudo ./autogen.sh --prefix=/opt/local --enable-debug
+   sudo make
+   sudo make install
+   sudo ./autogen.sh --with-gnutls
+   sudo ./autogen.sh --with-mbedtls mbedtls_INCLUDES=/opt/local/include mbedtls_LIBDIR=/opt/local/lib
    cd ..
    printf "\n[*] A instalar dependências avançadas do usbmuxd2...\n"
-   sudo git clone --recursive https://github.com/Italogc/usbmuxd2 &> /dev/null
-   sudo apt-get update > /dev/null
-   sudo add-apt-repository universe > /dev/null
-   sudo apt-get update > /dev/null
-   sudo apt install git curl python3-pip -y > /dev/null
+   sudo git clone --recursive https://github.com/Italogc/usbmuxd2
+   sudo apt-get update
+   sudo add-apt-repository universe
+   sudo apt-get update
+   sudo apt install git curl python3-pip -y
    printf "\n[*] Dependencias instaladas!\n"
    sleep 1
    systemctl stop usbmuxd
    cd ..
    echo -e "\n[*] Baixando Palera1n...\n"
-   sudo git clone --recursive https://github.com/palera1n/palera1n -b legacy &> /dev/null
+   sudo git clone --recursive https://github.com/palera1n/palera1n -b legacy
    echo "[+] Palera1n Baixado!"
-   sudo git clone --recursive https://github.com/Italogc/palera1n-3.0 &> /dev/null
+   sudo git clone --recursive https://github.com/Italogc/palera1n-3.0
    echo "[+] Palera1n Boot Fix 3.0 de Italogc-iOS Baixado!"
    echo "[+]                "
    echo "[+] Prosseguindo para o Palera1n Jailbreak..."
