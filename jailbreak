@@ -36,19 +36,7 @@ if [ $resp -eq 1 ]
    printf "\n A instalar algumas dependências do Jailbreak...\n"
    cd ..
    sudo apt-get update
-   sudo apt-get install build-essential
-   sudo apt-get install pkg-config
-   sudo apt-get install checkinstall
-   sudo apt-get install git
-   sudo apt-get install autoconf 
-   sudo apt-get install automake
-   sudo apt-get install libtool-bin
-   sudo apt-get install libplist-dev
-   sudo apt-get install libusbmuxd-dev
-   sudo apt-get install libssl-dev
-   sudo apt-get install usbmuxd
-   sudo apt-get install doxygen
-   sudo apt-get install cython
+   sudo apt-get install build-essential pkg-config checkinstall git autoconf automake libtool-bin libplist-dev libusbmuxd-dev libssl-dev doxygen cython -y 
    printf "\n A instalar dependências do LibiMobileDevice...\n"
    sudo git clone --recursive https://github.com/libimobiledevice/libimobiledevice.git
    cd libimobiledevice
